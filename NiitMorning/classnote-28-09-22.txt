@@ -1,0 +1,58 @@
+Variable : named memory location where we can save a data
+
+Operator : special characters which perform a predifined task(math calculation / comparision)
+
+Arithmetic : 
+
+math calculator ( Number type)
+
++ 	 add
+-	sub
+/	complete div
+*	mul
+%	modulas(remainder)
+
+//	floor div
+**	power/exponential
+
+
+character :
++			joining
+"niit " + "Jadavpur		"niit jadavpur"
+
+*			replication
+"a" * 3 			"aaa"
+
+
+
+question -> convert temperature from celcius to fahrenheit
+
+f = (c *9 / 5) + 32
+
+
+Type Conversion
+
+convert one datatype into another
+
+char -> int
+int(char data)
+
+char -> float
+float(char data)
+
+float -> string
+str(float data)
+
+int -> string
+str(int data)
+
+
+
+accept radius and calculate area and perimeter of a circle
+area = pi*r*r
+perimeter = 2 *pi *r
+
+round(data , position)
+
+
+ms = km * 3600 / 1000

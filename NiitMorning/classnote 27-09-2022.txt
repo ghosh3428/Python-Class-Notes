@@ -1,0 +1,107 @@
+I		P		O
+input		process		output
+keyboard		Micro Processor	desktop
+mouse				printer
+touch				speaker
+audio				projector
+joystick				
+
+
+Memory : storage space
+
+	RAM ->Random access memory(temparary)(change)
+	ROM -> read only memory(permanent)(cannot change)
+
+
+VARIABLE : named memory(RAM) location where we can save a data.
+	    this data can be changed.
+	    
+DATA -> raw fact
+27
+
+Information
+Today is 27th september 2022
+
+BIT -> smallest unit
+Byte -> 8bit
+kilobyte -> 1024 byte
+megabyte -> 1024 kb
+gigabyte -> 1024 mb
+
+Variable
+	name
+		1) it must start with an alphabet
+		2) Allowed : A-Z
+			    a-z
+			    0-9
+			    _
+		3) keywords cannot be used
+	data
+	Datatype(type of data and the size of data)
+		Primitive : single /independent 
+			number :
+				Whole:
+					short(2bytes)
+					int(4bytes)
+					long(8bytes)
+				Decimal:
+					float(4bytes)
+					double(8bytes)
+			Character :
+				char: single character(2bytes)
+
+			boolean : true/false (1bit)
+			byte (1byte)
+
+		Complex : group/dependent
+			String : multiple character
+			array
+			set
+			object
+			
+
+Python:
+	primitive :
+		int
+		float
+		bool
+	Complex:
+		Sequence
+		tupple
+		set
+		list
+		dictionary
+
+Syntax:
+Programming:(c,c++,java)
+	<datatype> <name> = <data> ;
+	String student_name = "Amit Kumar";
+
+Scripting(Python)
+<name> = <data>
+Eg:
+
+student_name = "Amit Kumar"
+amit = "Amit Kumar"
+student_age = 12
+
+
+Create a marksheet
+
+name
+roll_number
+my_class
+section
+maths
+eng
+comp
+sci
+hindi
+total
+average
+grade
+
+
+print( message,data) -> function
+
+
