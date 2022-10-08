@@ -1,0 +1,163 @@
+Opeartor
+
+Arithmetic
++
+-
+/
+*
+%
+
+//
+**
+
+
+Assignment
+
+lhs = rhs
+rhs -> data
+lhs -> memory location
+
+
+Arithmetic assignment
+
+
+Eg :
+
+num = 10
+num2 = num+20
+
+num = num + 20
+num += 20
+
+a = 10
+a = a*50
+
+a *= 50
+
+
+
+
+QUESTION -> ACCEPT A TWO DIGIT NUMBER BREAK THE DIGITS
+
+
+NUM = 21 //10 => 2
+
+67//10 => 6
+
+90 //10 => 9
+
+D1 = NUM//10 => 2
+D2 = NUM%10  => 1
+
+
+D1 = 2
+D2 = 1  
+
+D2*10 + D1  => 1*10 + 2   => 12
+
+
+
+QUESTION -> ACCEPT A THREE DIGIT NUMBER BREAK THE DIGITS
+
+
+NUM = 123
+
+D1 = 1   => NUM//100
+
+NUM = NUM%100
+NUM %= 100 	=> 23
+
+D2 = 2  	=> NUM//10
+D3 = 3  	=> NUM%10
+
+
+REVERSE => D3*100  + D2*10 + D1
+
+
+
+QUESTION -> ACCEPT A FOUR DIGIT NUMBER BREAK THE DIGITS
+
+NUM = 1234
+
+D1 = 1 => NUM//1000
+
+NUM = NUM%1000
+NUM %=1000   =>234
+
+D2 = 2  =>num//100
+
+NUM = NUM%100
+NUM%=100  =>34
+
+D3=3  =>NUM//10
+D4 =4 =>NUM%10
+
+
+
+Relational / Comparision
+
+>
+>=
+<
+<=
+!=
+==
+
+
+
+Age
+Conditional Construct
+age is above 18 -> i can drive
+age is below 18 -> i cannot drive 
+
+
+if condition :
+	true code
+else :
+	false cose
+
+
+Conditional Construct
+
+1) Simple If
+
+if condition:
+	true block
+
+
+2) if else 
+
+if condition:
+	true block
+else:
+	false block
+
+
+3) if...elif
+
+if condition1:
+	true block of condition1
+elif condition2:
+	true block of condition 2 since the condition1 is false
+else:
+	false block when all the condition are false
+
+
+
+Name
+Rollnumber
+Class
+Section
+math
+english
+computer
+hindi
+science
+total
+average
+grade
+
+
+
+
+
