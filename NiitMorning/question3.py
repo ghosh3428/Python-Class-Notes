@@ -1,10 +1,18 @@
-print("Enter a number :")
+weeknum = int(input("Enter a number between 1 and 7 : "))
 
-n = int(input())
-
-sq = n**2
-cb = n**3
-
-result = n + sq + cb
-
-print("n + nn + nnn =" , result)
+if(weeknum == 1):
+    print("Monday")
+elif(weeknum == 2):
+    print("Tuesday")
+elif(weeknum == 3):
+    print("Wednesday")
+elif(weeknum == 4):
+    print("Thursday")
+elif(weeknum == 5):
+    print("Friday")
+elif(weeknum == 6):
+    print("Saturday")
+elif(weeknum == 7):
+    print("Sunday")
+else:
+    print("Not a valid week day")

@@ -1,6 +1,8 @@
-print("Twinkle, twinkle, little star,")
-print("	How I wonder what you are!")
-print("		Up above the world so high,")   		
-print("		Like a diamond in the sky. ")
-print("Twinkle, twinkle, little star, ")
-print("	How I wonder what you are")
+num = int(input("Enter a number : "))
+
+if( num%5 == 0 and num%11 ==0):
+    print(num,"is divisible by both 5 and 11")
+else:
+    print(num,"is not divisible by both 5 and 11")
+
+

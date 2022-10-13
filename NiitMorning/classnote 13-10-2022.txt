@@ -1,0 +1,15 @@
+Set : Unique data
+
+create : empty set -> set()
+            		   {}
+
+we can insert data and delete data but cannot update/change a data
+we can group different type of data
+set is not sequencial
+indexing is not allowed in set
+
+
+Union -> all the values from both the set   (|)  union()
+minus				     (-)   difference()
+intersect ->only the common values	     (&)   intersect()
+except ->				     (^)

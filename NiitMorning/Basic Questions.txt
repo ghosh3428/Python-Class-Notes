@@ -1,17 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 1) 
 Write a Python program to print the following string in a specific format 
 Output :
@@ -30,85 +16,25 @@ Write a Python program which accepts the radius of a circle from the user and co
 Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn.
 
 4)
-Write a Python program to get the volume of a sphere with radius.
+Write a Python program to get the volume of a sphere with radius 6.
 
 5)
 Write a Python program that will accept the base and height of a triangle and compute the area.
 
-begin
-	int base , height , area;
-	base = 23;
-	height = 45;
-	area = 1/2 * base * height
-	display "Area of the triangle is" + area;
-end
-
 6)
 Write a Python program to display your details like name, age, address in three different lines.
-
-begin 
-	char name , address;
-	int age;
-	name = "Amit kumar";
-	address = "2/12 , Suraj Appartment , Jadavpur";
-	age = 23;
-	display "Name : " + name +".\n";
-	display "Age : " +age +".\n";
-	display "Address :" +address+".\n";
-end
 
 7)
 Write a Python program to solve (x + y) * (x + y). 
 
-begin
-	int x , y , result;
-	x = 4;
-	y = 8;
-	result = (x+y) * (x+y);
-	display "Result of the calculation is : " + result;
-end
-
+Test Data : x = 4, y = 3
+Expected Output : (4 + 3) ^ 2) = 49
 
 8)
  Write a Python program to convert height (in feet and inches) to centimeters.
-	1 feet = 30.48 cm
-	1 in = 2.54 cm
-
-begin
-	float heightF , heightI , cmF , cmI;
-	heightF = 45.98;
-	heightI = 34.12;
-
-	cmF = heightF *30.48;
-	cmI = heightI *2.54
-
-	display "Height in feet is " +  heightF + ".\n";
-	display "Height in cm is " +  cmF + ".\n";
-	display "Height in Inches is " +  heightI + ".\n";
-	display "Height in cm is " +  cmI + ".\n";
-end
 
 9)
 Write a Python program to calculate the hypotenuse of a right angled triangle.
 
-
 10)
 Write a Python program to convert seconds to day, hour, minutes and seconds.
-
-begin 
-	int sec , min , hr , day;
-	sec = 1234567;
-
-	min = sec/60;
-	sec = sec%60;
-
-	hr = min/60;
-	min = min%60;
-
-	day = hr/24;
-	hr = hr%24;
-
-	display day + ":" + hr + ":" + min + ":" + sec;
-end
-
-
