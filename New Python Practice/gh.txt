@@ -1,0 +1,266 @@
+12	5	7	90	11	19	43	89
+
+take a pivot value
+
+we take first value as the pivot
+
+pivot => 12
+
+small value  -> right to left(last to first)(first smaller value)
+bigger value -> left to right(first to last) ( first bigger value)
+
+small => 11
+si = 4
+
+bigger => 90
+bi = 3
+
+swap small with big because small value is present on the right side of bigger value
+12	5	7	11	90	19	43	89
+
+pivot = 12
+
+small =>11
+si=3
+
+bigger =>90
+bi = 4
+
+
+break the list as small value is present on the left side of bigger value
+
+g1 : pivot - small
+g2 : small+1 - last
+
+
+g1
+12	5	7	11
+
+swap pivot and small
+11	5	7	12 
+
+pivot = 11
+
+small => 7
+
+bigger => 12
+
+break as small is on the left side of bigger
+
+11	5	7		12
+
+swap pivot with small
+
+7	5	11
+
+pivot = 7
+small = 5
+bigger =11
+
+break
+
+7	5		11
+swap pivot with small
+
+5	7
+
+
+
+5	7	11	12	
+
+
+
+
+
+90	19	43	89
+pivot =90
+small = 89
+big = 
+
+swap small and pivot as big is empty
+
+89	19	43	90
+pivot = 89
+small = 43
+big  = 90
+
+break
+
+89	19	43		90
+swap pivot and small
+
+43	19	89
+
+pivot 43
+small = 19
+big = 89
+
+
+43	19		89
+swap
+
+19	43
+pivot = 19
+small = 
+big = 43
+
+
+
+
+
+5	7	11	12	19	43	89	90
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+
+ int arr[20]; // Array of integers to hold values
+ int n; // Number of elements in the array
+
+void read()
+{
+    while (1)
+    {
+        printf("\nEnter the number of elements in the array : ");
+        scanf("%d" , &n);
+        if (n>0 && n<= 20)
+            break;
+        else if(n>20)
+            printf("\nArray can have maximum 20 elements.\n");
+        else if (n < 0)
+            printf("\nEnter positive number.\n");
+    }
+    printf("\n-----------------------\n");
+    printf(" Enter array elements \n");
+    printf("-----------------------\n");
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("<%d> " , (i+1));
+        scanf("%d" , &arr[i]);
+    }
+}
+
+void display()
+{
+        printf("\n-----------------------\n");
+        printf(" Sorted array elements \n");
+        printf("-----------------------\n");
+        for (int j = 0; j < n; j++)
+        {
+            printf("%d\t" , arr[j]);
+        }
+}
+
+/* Swaps the element at index x with the element at index y */
+void swap(int x, int y)
+{
+        int temp;
+        temp = arr[x];
+        arr[x] = arr[y];
+        arr[y] = temp;
+ }
+
+
+void q_sort(int low, int high)
+{
+        int pivot, i, j;
+        if (low > high)
+        return;
+
+        // Partition the list into two parts:
+        // One containing elements less than or equal to pivot
+        // Other containing elements greater than pivot
+
+        i = low+1;
+        j = high;
+        pivot = arr[low];
+        while (i <= j)
+        {
+            // Search for an element greater than pivot
+            while ((arr[i] <= pivot) && (i <= high))
+            {
+                i++;
+            }
+
+            // Search for an element less than or equal to pivot
+            while ((arr[j] > pivot) && (j >= low))
+            {
+                j--;
+            }
+
+            /*
+                If the greater element is on the left of the smaller element
+                Swap the element at index i with the element at index j
+            */
+            if (i < j)
+            {
+                swap(i, j);
+            }
+        }
+
+        /*
+         j now contains the index of the last element in the sorted list.
+         */
+        if (low < j)
+        {
+            swap(low,j); // Move the pivot to its correct position in the list
+        }
+
+        // Sort the list on the left of the pivot using quick sort
+        q_sort(low, j - 1);
+        // Sort the list on the right of the pivot using quick sort
+        q_sort(j + 1, high);
+ }
+
+int main()
+{
+    read();
+
+    q_sort(0,n-1);
+
+    display();
+
+    printf("\n\nThank You\n\n");
+}
+
+
+
+
+Write a program in C to Check whether a given String is Palindrome or not
+
+
+word[] = madam  
+i = 0	4
+1	3
+2	2
+
+if(word[i] == word[len-1-i])
+	function word , i+1
+
+[0]	=	[last]
+[1]	=	[last-1]
+[2]	=	[last - 2]
+
+Write a program in C to calculate the power of any number using recursion.
+
+
+
+
+
+
+
+
+
+
